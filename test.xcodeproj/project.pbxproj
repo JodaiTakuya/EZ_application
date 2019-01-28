@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		257F57AB21FC446800A581A3 /* Ideas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F57AA21FC446800A581A3 /* Ideas.swift */; };
+		257F57AD21FC449300A581A3 /* Ideas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257F57AC21FC449300A581A3 /* Ideas.storyboard */; };
 		25CAF73D21F5E21E00DDB3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CAF73C21F5E21E00DDB3E4 /* AppDelegate.swift */; };
 		25CAF73F21F5E21E00DDB3E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CAF73E21F5E21E00DDB3E4 /* ViewController.swift */; };
 		25CAF74221F5E21E00DDB3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25CAF74021F5E21E00DDB3E4 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		257F57AA21FC446800A581A3 /* Ideas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ideas.swift; sourceTree = "<group>"; };
+		257F57AC21FC449300A581A3 /* Ideas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ideas.storyboard; sourceTree = "<group>"; };
 		25CAF73921F5E21E00DDB3E4 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CAF73C21F5E21E00DDB3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25CAF73E21F5E21E00DDB3E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				25CAF73C21F5E21E00DDB3E4 /* AppDelegate.swift */,
 				25CAF73E21F5E21E00DDB3E4 /* ViewController.swift */,
 				25CAF74021F5E21E00DDB3E4 /* Main.storyboard */,
+				257F57AA21FC446800A581A3 /* Ideas.swift */,
+				257F57AC21FC449300A581A3 /* Ideas.storyboard */,
 				25CAF74321F5E22000DDB3E4 /* Assets.xcassets */,
 				25CAF74521F5E22000DDB3E4 /* LaunchScreen.storyboard */,
 				25CAF74821F5E22000DDB3E4 /* Info.plist */,
@@ -230,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25CAF74721F5E22000DDB3E4 /* LaunchScreen.storyboard in Resources */,
+				257F57AD21FC449300A581A3 /* Ideas.storyboard in Resources */,
 				25CAF74421F5E22000DDB3E4 /* Assets.xcassets in Resources */,
 				25CAF74221F5E21E00DDB3E4 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25CAF73F21F5E21E00DDB3E4 /* ViewController.swift in Sources */,
+				257F57AB21FC446800A581A3 /* Ideas.swift in Sources */,
 				25CAF73D21F5E21E00DDB3E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,12 +441,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3XY9BM8VN;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = a.test;
+				PRODUCT_BUNDLE_IDENTIFIER = hogehoge.mountain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,12 +459,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3XY9BM8VN;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = a.test;
+				PRODUCT_BUNDLE_IDENTIFIER = hogehoge.mountain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

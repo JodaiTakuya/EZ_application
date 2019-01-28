@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,84 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ben-mg-nF4">
+                                <rect key="frame" x="143.5" y="186" width="127" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="h1g-KY-rHb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <state key="normal" title="話題を生成">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.43137254899999999" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfl-yh-xaI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="おおおお" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1F-lW-RmO" userLabel="Output">
+                                <rect key="frame" x="172" y="324" width="70" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="lup-CU-Vel"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="話題なくて困ってるらしいやん" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ON0-FW-2C8">
+                                <rect key="frame" x="85.5" y="137" width="243" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q7O-Zh-DTz">
+                                <rect key="frame" x="0.0" y="54" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Engilsh Zone" id="o1e-P2-6oM">
+                                        <barButtonItem key="backBarButtonItem" title="fa" id="hjc-Wv-REh"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDy-7e-w5T">
+                                <rect key="frame" x="152" y="375" width="110" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                <state key="normal" title="リセット"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uGE-J8-CKR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ON0-FW-2C8" firstAttribute="top" secondItem="Q7O-Zh-DTz" secondAttribute="bottom" constant="39" id="3W9-DR-tby"/>
+                            <constraint firstItem="Q7O-Zh-DTz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4bn-cp-hzm"/>
+                            <constraint firstItem="R1F-lW-RmO" firstAttribute="top" secondItem="ben-mg-nF4" secondAttribute="bottom" constant="96" id="7kv-SA-dyD"/>
+                            <constraint firstItem="ben-mg-nF4" firstAttribute="top" secondItem="ON0-FW-2C8" secondAttribute="bottom" constant="28" id="8wq-Ka-9x9"/>
+                            <constraint firstItem="XDy-7e-w5T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CEn-4C-wjd"/>
+                            <constraint firstItem="R1F-lW-RmO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LXP-3p-lm2"/>
+                            <constraint firstItem="ben-mg-nF4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T1C-9y-5ms"/>
+                            <constraint firstItem="ON0-FW-2C8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z9W-XI-vFv"/>
+                            <constraint firstItem="XDy-7e-w5T" firstAttribute="top" secondItem="R1F-lW-RmO" secondAttribute="bottom" constant="31" id="cSO-HD-WMa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XDy-7e-w5T" secondAttribute="trailing" constant="152" id="eep-Zd-99Z"/>
+                            <constraint firstItem="Q7O-Zh-DTz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fDl-uB-dd0"/>
+                            <constraint firstItem="Q7O-Zh-DTz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="s7N-ST-gbl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="JDtitle" destination="ON0-FW-2C8" id="w32-h0-faB"/>
+                        <outlet property="Output" destination="R1F-lW-RmO" id="KBl-zr-fw2"/>
+                        <outlet property="Titleheader" destination="Q7O-Zh-DTz" id="anI-tY-yjS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.623188405797109" y="-139.28571428571428"/>
         </scene>
     </scenes>
 </document>
